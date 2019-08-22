@@ -20,3 +20,7 @@
 6. `footer.less`
 7. `home-page.less`
 8. `about-us.less`
+
+## Product Canvas
+
+The Product Canvas can be viewed [here](https://docs.google.com/document/d/1rQV-umqBiBXv-vL6ze1_EqSxrbDX0bPFn-SYqJbcoko/edit).
