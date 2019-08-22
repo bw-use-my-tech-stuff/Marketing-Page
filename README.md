@@ -18,5 +18,5 @@
 4. `global.less`
 5. `navigation.less`
 6. `footer.less`
-7. `home-page.less'
-8. 'about-us.less'
+7. `home-page.less`
+8. `about-us.less`
