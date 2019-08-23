@@ -24,3 +24,9 @@
 ## Product Canvas
 
 The Product Canvas can be viewed [here](https://docs.google.com/document/d/1rQV-umqBiBXv-vL6ze1_EqSxrbDX0bPFn-SYqJbcoko/edit).
+
+## Authors
+
+[Chris Vasquez](https://github.com/Chrvasq)
+[Sean Hockin](https://github.com/TonyCWalker)
+[Tony Walker](https://github.com/shockin779)
