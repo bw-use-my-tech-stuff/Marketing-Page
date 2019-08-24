@@ -72,50 +72,69 @@ footer .social-icons .icon {
 footer .copyright {
   color: white;
 }
-.top-content {
+.home .top-content {
   text-align: center;
   padding: 20px 10px 10px 10px;
   margin-top: 20px;
   margin: 0 auto;
 }
-.middle-content {
+.home .middle-content {
   display: flex;
   flex-direction: column;
   margin: 0 auto;
 }
-.middle-content .images {
+.home .middle-content .images {
   width: 100%;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
 }
-.middle-content .images img {
+.home .middle-content .images img {
   width: 150px;
   height: 100px;
   padding: 5px;
 }
 @media (min-width: 1000px) {
-  .middle-content .images img {
+  .home .middle-content .images img {
     width: 300px;
     height: 200px;
   }
 }
 @media (min-width: 800px) and (max-width: 999px) {
-  .middle-content .images img {
+  .home .middle-content .images img {
     width: 200px;
     height: 150px;
   }
 }
-.content {
+.home .testimonials {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.home .testimonials article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 1rem;
+}
+.home .testimonials article img {
+  width: 150px;
+  height: 100px;
+  margin-bottom: 1rem;
+}
+.home .testimonials article p {
+  padding: inherit;
+}
+.home .content {
   text-align: center;
   padding: 20px 10px 20px 10px;
   border-bottom: 2px solid #727072;
   margin-bottom: 20px;
 }
-.content button {
+.home .content button {
   border: 1px solid #727072;
   padding: 5px;
-  background: #2B4162;
+  background: #2b4162;
   color: white;
   border-radius: 5px;
   font-weight: bold;
