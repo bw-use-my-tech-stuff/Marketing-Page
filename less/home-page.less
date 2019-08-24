@@ -1,24 +1,19 @@
 // Home page style here
 .home {
   .top-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    .flex-custom(column, @align-items:center);
     padding: 2rem 1rem 1rem 1rem;
     margin-top: 2rem;
     margin: 0 auto;
   }
 
   .middle-content {
-    display: flex;
-    flex-direction: column;
+    .flex-custom(column);
     margin: 0 auto;
 
     .images {
       width: 100%;
-      display: flex;
-      flex-flow: row wrap;
-      justify-content: center;
+      .flex-custom(@justify-content:center, @flex-wrap:wrap);
 
       img {
         width: 150px;
@@ -39,12 +34,10 @@
   }
 
   .content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     padding: 2rem 1rem 2rem 1rem;
     border-bottom: 2px solid @nickel;
     margin-bottom: 2rem;
+    .flex-custom(column, @align-items:center);
   }
 
   .content button {
@@ -60,14 +53,9 @@
   }
 
   .testimonials {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
+    .flex-custom(column, @align-items:center);
     article {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
+      .flex-custom(column, @align-items:center);
       padding: 2rem 1rem;
 
       img {
