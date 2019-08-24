@@ -168,3 +168,40 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+.about-page {
+  width: 100%;
+}
+.about-page .team {
+  margin-top: 30px;
+}
+.about-page .team h2 {
+  font-size: 32px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.about-page .team .members {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.about-page .team .members .team-member {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.about-page .team .members .team-member h3 {
+  font-size: 24px;
+}
+.about-page .team .members .team-member img {
+  width: 80%;
+  margin-bottom: 20px;
+}
+.about-page .team .members .team-member .member-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
