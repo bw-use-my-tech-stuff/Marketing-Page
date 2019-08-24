@@ -192,7 +192,6 @@ footer {
   flex-flow: column;
   align-items: center;
   background: #2b4162;
-  position: fixed;
   bottom: 0;
 }
 footer nav {
