@@ -1,1 +1,26 @@
 // Navigation styles here
+.top-nav {
+  width: 100%;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  background: @background;
+  // border: 2px solid red;
+  .logo {
+    font-size: 4.8rem;
+    color: @logo;
+  }
+
+  nav {
+    width: 100%;
+    padding: 1%;
+    display: flex;
+    justify-content: space-between;
+    // border: 2px solid blue;
+    a {
+      text-decoration: none;
+      color: @link;
+      // border: 2px solid red;
+    }
+  }
+}
