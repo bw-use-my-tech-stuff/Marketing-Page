@@ -169,6 +169,7 @@ img {
   flex-flow: column;
   align-items: center;
   background: #2b4162;
+  padding: 20px 0 20px 0;
 }
 .top-nav .logo {
   font-size: 4.8rem;
@@ -191,6 +192,8 @@ footer {
   flex-flow: column;
   align-items: center;
   background: #2b4162;
+  position: fixed;
+  bottom: 0;
 }
 footer nav {
   width: 100%;
@@ -213,6 +216,58 @@ footer .social-icons .icon {
 }
 footer .copyright {
   color: white;
+}
+.top-content {
+  text-align: center;
+  padding: 20px 10px 10px 10px;
+  border-top: 2px solid #727072;
+  margin-top: 20px;
+  margin: 0 auto;
+}
+.middle-content {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+.middle-content .images {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+.middle-content .images img {
+  width: 150px;
+  height: 100px;
+  padding: 5px;
+}
+@media (min-width: 1000px) {
+  .middle-content .images img {
+    width: 300px;
+    height: 200px;
+  }
+}
+@media (min-width: 800px) and (max-width: 999px) {
+  .middle-content .images img {
+    width: 200px;
+    height: 150px;
+  }
+}
+.content {
+  text-align: center;
+  padding: 20px 10px 20px 10px;
+  border-bottom: 2px solid #727072;
+  margin-bottom: 20px;
+}
+.content button {
+  border: 1px solid #727072;
+  padding: 5px;
+  background: #2B4162;
+  color: white;
+  border-radius: 5px;
+  font-weight: bold;
+  width: 150px;
+  height: 50px;
+  font-size: 20px;
 }
 .about-page {
   width: 100%;
