@@ -54,9 +54,24 @@
 
   .testimonials {
     .flex-custom(column, @align-items:center);
+
     article {
       .flex-custom(column, @align-items:center);
       padding: 2rem 1rem;
+
+      @media @tablet {
+        .flex-custom(row, @justify-content:space-around);
+        p {
+          width: 50%;
+        }
+      }
+
+      @media @desktop {
+        .flex-custom(row, @justify-content:space-around);
+        p {
+          width: 50%;
+        }
+      }
 
       img {
         width: 150px;
@@ -67,6 +82,16 @@
       p {
         padding: inherit;
       }
+    }
+  }
+
+  .testimonials article:last-child {
+    @media @tablet {
+      flex-direction: row-reverse;
+    }
+
+    @media @desktop {
+      flex-direction: row-reverse;
     }
   }
 }

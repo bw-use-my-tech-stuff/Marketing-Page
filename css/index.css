@@ -117,7 +117,7 @@ footer .copyright {
     height: 200px;
   }
 }
-@media (min-width: 800px) and (max-width: 999px) {
+@media (min-width: 768px) and (max-width: 999px) {
   .home .middle-content .images img {
     width: 200px;
     height: 150px;
@@ -165,6 +165,34 @@ footer .copyright {
   flex-wrap: unset;
   padding: 2rem 1rem;
 }
+@media (min-width: 768px) and (max-width: 999px) {
+  .home .testimonials article {
+    display: flex;
+    flex-direction: row;
+    justify-items: unset;
+    justify-content: space-around;
+    align-items: unset;
+    align-content: unset;
+    flex-wrap: unset;
+  }
+  .home .testimonials article p {
+    width: 50%;
+  }
+}
+@media (min-width: 1000px) {
+  .home .testimonials article {
+    display: flex;
+    flex-direction: row;
+    justify-items: unset;
+    justify-content: space-around;
+    align-items: unset;
+    align-content: unset;
+    flex-wrap: unset;
+  }
+  .home .testimonials article p {
+    width: 50%;
+  }
+}
 .home .testimonials article img {
   width: 150px;
   height: 100px;
@@ -172,6 +200,16 @@ footer .copyright {
 }
 .home .testimonials article p {
   padding: inherit;
+}
+@media (min-width: 768px) and (max-width: 999px) {
+  .home .testimonials article:last-child {
+    flex-direction: row-reverse;
+  }
+}
+@media (min-width: 1000px) {
+  .home .testimonials article:last-child {
+    flex-direction: row-reverse;
+  }
 }
 .about-page {
   width: 100%;
