@@ -1,56 +1,97 @@
 // Home page style here
-.top-content {
-    text-align: center;
-    padding: 20px 10px 10px 10px;
-    border-top: 2px solid @nickel;
-    margin-top: 20px;
+.home {
+  .top-content {
+    .flex-custom(column, @align-items:center);
+    padding: 2rem 1rem 1rem 1rem;
+    margin-top: 2rem;
     margin: 0 auto;
-}
+  }
 
-.middle-content {
-    display: flex;
-    flex-direction: column;
+  .middle-content {
+    .flex-custom(column);
     margin: 0 auto;
 
     .images {
-        width: 100%;
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: center;
+      width: 100%;
+      .flex-custom(@justify-content:center, @flex-wrap:wrap);
 
-        img {
-            width: 150px;
-            height: 100px;
-            padding: 5px;
+      img {
+        width: 150px;
+        height: 100px;
+        padding: 5px;
 
         @media @desktop {
-                width: 300px;
-                height: 200px;
-            }
+          width: 300px;
+          height: 200px;
+        }
 
         @media @tablet {
-            width: 200px;
-            height: 150px;
-            }
+          width: 200px;
+          height: 150px;
         }
+      }
     }
-}
+  }
 
-.content {
-text-align: center;
-padding: 20px 10px 20px 10px;
-border-bottom: 2px solid @nickel;
-margin-bottom: 20px;
-}
+  .content {
+    padding: 2rem 1rem 2rem 1rem;
+    border-bottom: 2px solid @nickel;
+    margin-bottom: 2rem;
+    .flex-custom(column, @align-items:center);
+  }
 
-.content button {
-border: 1px solid #727072;
-padding: 5px;
-background: #2B4162;
-color: white;
-border-radius: 5px;
-font-weight: bold;
-width: 150px;
-height: 50px;
-font-size: 20px;
+  .content button {
+    border: 1px solid #727072;
+    padding: 5px;
+    background: #2b4162;
+    color: white;
+    border-radius: 5px;
+    font-weight: bold;
+    width: 150px;
+    height: 50px;
+    font-size: 2rem;
+  }
+
+  .testimonials {
+    .flex-custom(column, @align-items:center);
+
+    article {
+      .flex-custom(column, @align-items:center);
+      padding: 2rem 1rem;
+
+      @media @tablet {
+        .flex-custom(row, @justify-content:space-around);
+        p {
+          width: 50%;
+        }
+      }
+
+      @media @desktop {
+        .flex-custom(row, @justify-content:space-around);
+        p {
+          width: 50%;
+        }
+      }
+
+      img {
+        width: 150px;
+        height: 100px;
+        margin-bottom: 1rem;
+      }
+
+      p {
+        padding: inherit;
+      }
+    }
+  }
+
+  .testimonials article:last-child {
+    @media @tablet {
+      flex-direction: row-reverse;
+    }
+
+    @media @desktop {
+      flex-direction: row-reverse;
+    }
+  }
 }
