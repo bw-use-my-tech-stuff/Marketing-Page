@@ -89,6 +89,11 @@ footer nav {
   display: flex;
   justify-content: space-evenly;
 }
+@media (min-width: 1000px) {
+  footer nav {
+    width: 50%;
+  }
+}
 footer nav a {
   text-decoration: none;
   color: #f5f0f6;
