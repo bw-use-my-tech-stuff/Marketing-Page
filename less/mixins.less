@@ -1,10 +1,20 @@
 // Mixins here
-.flex-custom(@direction:row, @justify-items:unset, @justify-content:unset, @align-items:unset, @align-content:unset, @flex-wrap:unset) {
+.flex-custom(@direction:row; @justify-items: ~""; @justify-content: ~""; @align-items: ~""; @align-content: ~""; @flex-wrap: ~"") {
   display: flex;
   flex-direction: @direction;
-  justify-items: @justify-items;
-  justify-content: @justify-content;
-  align-items: @align-items;
-  align-content: @align-content;
-  flex-wrap: @flex-wrap;
+  & when not (@justify-items = ~'') {
+    justify-items: @justify-items;
+  }
+  & when not (@justify-content = ~'') {
+    justify-content: @justify-content;
+  }
+  & when not (@align-items = ~'') {
+    align-items: @align-items;
+  }
+  & when not (@align-content = ~'') {
+    align-content: @align-content;
+  }
+  & when not (@flex-wrap = ~'') {
+    flex-wrap: @flex-wrap;
+  }
 }
