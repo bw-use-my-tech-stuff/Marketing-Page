@@ -22,7 +22,7 @@
 
 ## Product Canvas
 
-[Product Canvas](https://docs.google.com/document/d/1rQV-umqBiBXv-vL6ze1_EqSxrbDX0bPFn-SYqJbcoko/edit).
+- [Product Canvas](https://docs.google.com/document/d/1rQV-umqBiBXv-vL6ze1_EqSxrbDX0bPFn-SYqJbcoko/edit)
 
 ## Built with:
 
