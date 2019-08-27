@@ -14,19 +14,22 @@
 
 1. `variables.less`
 2. `mixins.less`
-3. `reset.less`
-4. `global.less`
-5. `navigation.less`
-6. `footer.less`
-7. `home-page.less`
-8. `about-us.less`
+3. `global.less`
+4. `navigation.less`
+5. `footer.less`
+6. `home-page.less`
+7. `about-us.less`
 
 ## Product Canvas
 
-The Product Canvas can be viewed [here](https://docs.google.com/document/d/1rQV-umqBiBXv-vL6ze1_EqSxrbDX0bPFn-SYqJbcoko/edit).
+[Product Canvas](https://docs.google.com/document/d/1rQV-umqBiBXv-vL6ze1_EqSxrbDX0bPFn-SYqJbcoko/edit).
+
+## Built with:
+
+- Semantic UI
 
 ## Authors
 
-[Chris Vasquez](https://github.com/Chrvasq)
-[Sean Hockin](https://github.com/TonyCWalker)
-[Tony Walker](https://github.com/shockin779)
+- [Chris Vasquez](https://github.com/Chrvasq)
+- [Sean Hockin](https://github.com/TonyCWalker)
+- [Tony Walker](https://github.com/shockin779)
