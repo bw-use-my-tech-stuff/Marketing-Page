@@ -1,22 +1,33 @@
 // Navigation styles here
 .top-nav {
   width: 100%;
-  display: flex;
-  flex-flow: column;
-  align-items: center;
+  .flex-custom(column, @align-items: center);
   background: @background;
   padding: 20px 0;
+
+  @media @desktop {
+    .flex-custom(row, @align-items: center, @justify-content: space-between);
+  }
 
   .logo {
     font-size: 4.8rem;
     color: @logo;
+
+    @media @desktop {
+      margin-left: 5%;
+    }
   }
 
   nav {
     width: 100%;
     padding: 1%;
-    display: flex;
-    justify-content: space-evenly;
+    .flex-custom(@justify-content: space-evenly);
+
+    @media @desktop {
+      width: 50%;
+      justify-items: flex-end;
+      justify-content: space-evenly;
+    }
 
     a {
       text-decoration: none;
