@@ -40,6 +40,14 @@ img {
     align-items: center;
     align-content: unset;
     flex-wrap: unset;
+    position: sticky;
+    top: 0;
+  }
+}
+@media (min-width: 768px) and (max-width: 999px) {
+  .top-nav {
+    position: sticky;
+    top: 0;
   }
 }
 .top-nav .logo {
@@ -74,6 +82,9 @@ img {
   font-size: 1.6rem;
   color: #f5f0f6;
 }
+.top-nav nav a:hover {
+  color: #4183c4;
+}
 footer {
   width: 100%;
   display: flex;
@@ -98,6 +109,9 @@ footer nav a {
   text-decoration: none;
   color: #f5f0f6;
   font-size: 1.6rem;
+}
+footer nav a:hover {
+  color: #4183c4;
 }
 footer .social-icons {
   display: flex;
