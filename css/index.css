@@ -178,9 +178,11 @@ footer .copyright {
   width: 150px;
   height: 100px;
 }
-@desktop (min-width: 1200px) {
-  width: 175px;
-  height: 125px;
+@media (min-width: 1000px) (min-width: 1200px) {
+  .home .middle-content .images-2 img {
+    width: 175px;
+    height: 125px;
+  }
 }
 .home .content {
   padding: 2rem 1rem 2rem 1rem;
