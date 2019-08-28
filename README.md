@@ -31,5 +31,5 @@
 ## Authors
 
 - [Chris Vasquez](https://github.com/Chrvasq)
-- [Sean Hockin](https://github.com/TonyCWalker)
-- [Tony Walker](https://github.com/shockin779)
+- [Sean Hockin](https://github.com/shockin779)
+- [Tony Walker](https://github.com/TonyCWalker)
