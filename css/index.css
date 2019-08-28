@@ -26,6 +26,7 @@ img {
   align-items: center;
   background: #2b4162;
   padding: 20px 0;
+  z-index: 20;
 }
 @media (min-width: 1000px) {
   .top-nav {
@@ -261,7 +262,8 @@ footer .copyright {
   width: 100%;
 }
 .about-page .team {
-  margin-top: 30px;
+  padding: 30px 0px;
+  background-color: #B4B9BC;
 }
 .about-page .team h2 {
   font-size: 32px;
@@ -274,12 +276,27 @@ footer .copyright {
   justify-content: center;
   align-items: center;
 }
+.about-page .team .members a {
+  display: contents;
+  color: black;
+}
+.about-page .team .members .card:hover {
+  background-color: lightseagreen;
+}
+.about-page .team .members .ui.link.cards:hover {
+  background-color: lightseagreen;
+}
 .about-page .team .members .team-member {
   width: 30%;
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-bottom: 20px;
+  height: 500px;
+  border: 1px solid lightblue;
+  border-radius: 10px;
+  background-color: lightseagreen;
+  margin: 20px 20px;
 }
 .about-page .team .members .team-member h3 {
   font-size: 24px;
@@ -287,6 +304,7 @@ footer .copyright {
 .about-page .team .members .team-member img {
   width: 80%;
   margin-bottom: 20px;
+  padding-top: 15px;
 }
 .about-page .team .members .team-member .member-info {
   display: flex;
