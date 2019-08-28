@@ -278,6 +278,13 @@ footer .copyright {
 }
 .about-page .team .members a {
   display: contents;
+  color: black;
+}
+.about-page .team .members .card:hover {
+  background-color: lightseagreen;
+}
+.about-page .team .members .ui.link.cards:hover {
+  background-color: lightseagreen;
 }
 .about-page .team .members .team-member {
   width: 30%;
@@ -286,6 +293,10 @@ footer .copyright {
   align-items: center;
   margin-bottom: 20px;
   height: 500px;
+  border: 1px solid lightblue;
+  border-radius: 10px;
+  background-color: lightseagreen;
+  margin: 20px 20px;
 }
 .about-page .team .members .team-member h3 {
   font-size: 24px;
