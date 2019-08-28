@@ -48,23 +48,41 @@ if(membersSection) {
     // *** Also a reusable component. You can add as many team members as you want to the list and it will work.
     teamSorted.forEach(function(member) {
 
-        let tempDiv = document.createElement('div');
-        tempDiv.classList.add('team-member');
-        tempDiv.innerHTML = `<img src="${member.image}" alt="Picture of team member ${member.firstName} ${member.lastName}">
-        <div class="member-info">
-            <h3>${member.firstName} ${member.lastName}</h3>
-            <p>${member.role}</p>
-            <p>Github Handle: <a href="${member.githubLink}" target="_blank">${member.githubUsername}</a></p>`;
+        let tempLink = document.createElement('a');
+        tempLink.setAttribute('href', `${member.githubLink}`);
+        tempLink.setAttribute('target', '_blank');
 
-        membersSection.append(tempDiv);
+
+        tempLink.innerHTML = `
+            <div class="team-member card">
+                <img src="${member.image}" alt="Picture of team member ${member.firstName} ${member.lastName}" />
+                <div class="member-info">
+                    <h3>${member.firstName} ${member.lastName}</h3>
+                    <p>${member.role}</p>
+                    <p>Github Handle: <a href="${member.githubLink}" target="_blank">${member.githubUsername}</a>
+                    </p>
+                </div>
+            </div>`;
+
+        membersSection.append(tempLink);
+        // let tempDiv = document.createElement('div');
+        // tempDiv.classList.add('team-member');
+        // tempDiv.classList.add('card');
+        // tempDiv.innerHTML = `<img src="${member.image}" alt="Picture of team member ${member.firstName} ${member.lastName}">
+        // <div class="member-info">
+        //     <h3>${member.firstName} ${member.lastName}</h3>
+        //     <p>${member.role}</p>
+        //     <p>Github Handle: <a href="${member.githubLink}" target="_blank">${member.githubUsername}</a></p>`;
+
+        // membersSection.append(tempDiv);
     })
 }
 
 
-// Grab the hamburger icon
+// // Grab the hamburger icon
 let hamburger = document.querySelector('header i');
 
-// Get header nav
+// // Get header nav
 let headerNav = document.querySelector('header nav');
 
 
@@ -83,5 +101,3 @@ if(emailButton) {
 
     emailButton.addEventListener('mouseleave', e => e.target.style.opacity = 1);
 }
-
-
