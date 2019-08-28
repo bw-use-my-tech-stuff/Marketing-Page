@@ -14,12 +14,21 @@ footer {
     display: flex;
     justify-content: space-evenly;
 
+    @media @desktop {
+      width: 50%;
+    }
+
     a {
       text-decoration: none;
       color: @link;
       font-size: 1.6rem;
     }
+
+    a:hover {
+      color: #4183c4;
+    }
   }
+
   .social-icons {
     display: flex;
 
