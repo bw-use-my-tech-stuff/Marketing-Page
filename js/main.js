@@ -59,7 +59,7 @@ if(membersSection) {
                 <div class="member-info">
                     <h3>${member.firstName} ${member.lastName}</h3>
                     <p>${member.role}</p>
-                    <p>Github Handle: <a href="${member.githubLink}" target="_blank">${member.githubUsername}</a>
+                    <p>GitHub Handle: <a href="${member.githubLink}" target="_blank">${member.githubUsername}</a>
                     </p>
                 </div>
             </div>`;
