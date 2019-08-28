@@ -23,30 +23,40 @@
     .images {
       width: 100%;
       .flex-custom(@justify-content:space-evenly, @flex-wrap: wrap);
+      height: 0;
 
-      @media @tablet, @desktop, @full-screen {
-        margin-top: 1rem;
+      @media @tablet {
+        visibility: visible;
+        margin-top: 2rem;
+        height: auto;
       }
 
       img {
-        width: 150px;
+        width: 100px;
         height: 100px;
         padding: 5px;
+      }
+    }
 
-        @media @desktop {
-          width: 150px;
-          height: 100px;
-        }
-
-        @media @full-screen {
-          width: 180px;
-          height: 130px;
-        }
-
-        @media @tablet {
-          width: 200px;
+    .images-2 {
+      width: 100%;
+      .flex-custom(@justify-content:space-evenly, @flex-wrap: wrap);
+      visibility: hidden;
+      height: 0;
+  
+      @media @desktop, @full-screen {
+        visibility: visible;
+        margin-top: 2rem;
+        height: auto;
+      }
+  
+      img {
+        width: 150px;
+        height: 100px;
+        
+        @desktop @full-screen{
+          width: 175px;
           height: 125px;
-          margin-bottom: 2rem;
         }
       }
     }
