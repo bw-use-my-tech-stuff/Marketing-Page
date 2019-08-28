@@ -46,11 +46,10 @@
 
     @media @desktop {
       width: 50%;
-      .flex-custom(@justify-content: space-evenly);
       justify-items: flex-end;
     }
 
-    @media @tablet {
+    @media @desktop, @tablet {
       .flex-custom(@justify-content: space-evenly);
       padding: 1%;
     }
@@ -68,9 +67,6 @@
       @media @desktop, @tablet {
         border: none;
         font-size: 1.6rem;
-      }
-
-      @media @tablet {
         width: auto;
         padding: 0;
       }
