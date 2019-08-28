@@ -7,6 +7,15 @@
     margin: 0 auto;
   }
 
+  .banner {
+    padding-top: 2rem;
+    width: 100%;
+
+    @media @tablet, @desktop, @full-screen {
+      display: none;
+    }
+  }
+
   .middle-content {
     .flex-custom(column);
     margin: 0 auto;
