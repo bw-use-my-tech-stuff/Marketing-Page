@@ -47,42 +47,49 @@ if(membersSection) {
     // Loop through each team member and add them to the about us page
     // *** Also a reusable component. You can add as many team members as you want to the list and it will work.
     teamSorted.forEach(function(member) {
+        console.log(member);
 
-        let tempDiv = document.createElement('div');
-        tempDiv.classList.add('team-member');
-        tempDiv.innerHTML = `<img src="${member.image}" alt="Picture of team member ${member.firstName} ${member.lastName}">
-        <div class="member-info">
-            <h3>${member.firstName} ${member.lastName}</h3>
-            <p>${member.role}</p>
-            <p>Github Handle: <a href="${member.githubLink}" target="_blank">${member.githubUsername}</a></p>`;
+        let tempLink = document.createElement('a');
+        tempLink.setAttribute('href', `${member.githubLink}`);
+        tempLink.setAttribute('target', '_blank');
+
+
+        tempLink.innerHTML = `
+            <div class="team-member card">
+                <img src="${member.image}" alt="Picture of team member ${member.firstName} ${member.lastName}" />
+                <div class="member-info">
+                    <h3>${member.firstName} ${member.lastName}</h3>
+                    <p>${member.role}</p>
+                    <p>Github Handle: <a href="${member.githubLink}" target="_blank">${member.githubUsername}</a>
+                    </p>
+                </div>
+            </div>`;
+
+        membersSection.append(tempLink);
+        // let tempDiv = document.createElement('div');
+        // tempDiv.classList.add('team-member');
+        // tempDiv.classList.add('card');
+        // tempDiv.innerHTML = `<img src="${member.image}" alt="Picture of team member ${member.firstName} ${member.lastName}">
+        // <div class="member-info">
+        //     <h3>${member.firstName} ${member.lastName}</h3>
+        //     <p>${member.role}</p>
+        //     <p>Github Handle: <a href="${member.githubLink}" target="_blank">${member.githubUsername}</a></p>`;
     
-        membersSection.append(tempDiv);
+        // membersSection.append(tempDiv);
     })
 }
 
 
-// Grab the hamburger icon
-let hamburger = document.querySelector('header i');
+// // Grab the hamburger icon
+// let hamburger = document.querySelector('header i');
 
-// Get header nav
-let headerNav = document.querySelector('header nav');
+// // Get header nav
+// let headerNav = document.querySelector('header nav');
 
 
-hamburger.addEventListener('click', function(e) {
-    headerNav.classList.toggle('hidden');
-    headerNav.classList.toggle('visible');
-});
-
-// Grab email submit button
-let emailButton = document.querySelector('.email-signup button');
-
-//Make sure emailButton exists
-if(emailButton) {
-    emailButton.addEventListener('mouseenter', function(e) {
-        e.target.style.opacity = 0.9;
-    });
-
-    emailButton.addEventListener('mouseleave', e => e.target.style.opacity = 1);
-}
+// hamburger.addEventListener('click', function(e) {
+//     headerNav.classList.toggle('hidden');
+//     headerNav.classList.toggle('visible');
+// });
 
 
