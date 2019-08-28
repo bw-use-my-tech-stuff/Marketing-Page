@@ -119,9 +119,19 @@ footer .copyright {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 2rem 1rem 1rem 1rem;
+  padding: 2rem 1rem;
   margin-top: 2rem;
   margin: 0 auto;
+  border-bottom: 2px solid #727072;
+}
+.home .banner {
+  padding-top: 2rem;
+  width: 100%;
+}
+@media (min-width: 768px) and (max-width: 999px), (min-width: 1000px), (min-width: 1200px) {
+  .home .banner {
+    display: none;
+  }
 }
 .home .middle-content {
   display: flex;
@@ -129,39 +139,50 @@ footer .copyright {
   margin: 0 auto;
 }
 .home .middle-content .images {
+  visibility: hidden;
   width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   flex-wrap: wrap;
+  height: 0;
 }
-@media (min-width: 768px) and (max-width: 999px), (min-width: 1000px), (min-width: 1200px) {
+@media (min-width: 768px) and (max-width: 999px) {
   .home .middle-content .images {
-    margin-top: 1rem;
+    visibility: visible;
+    margin-top: 2rem;
+    height: auto;
   }
 }
 .home .middle-content .images img {
-  width: 150px;
+  width: 100px;
   height: 100px;
   padding: 5px;
 }
-@media (min-width: 1000px) {
-  .home .middle-content .images img {
-    width: 150px;
-    height: 100px;
+.home .middle-content .images-2 {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  visibility: hidden;
+  height: 0;
+}
+@media (min-width: 1000px), (min-width: 1200px) {
+  .home .middle-content .images-2 {
+    visibility: visible;
+    margin-top: 2rem;
+    height: auto;
   }
+}
+.home .middle-content .images-2 img {
+  width: 150px;
+  height: 100px;
 }
 @media (min-width: 1200px) {
-  .home .middle-content .images img {
-    width: 180px;
-    height: 130px;
-  }
-}
-@media (min-width: 768px) and (max-width: 999px) {
-  .home .middle-content .images img {
-    width: 200px;
+  .home .middle-content .images-2 img {
+    width: 175px;
     height: 125px;
-    margin-bottom: 2rem;
   }
 }
 .home .content {
@@ -172,9 +193,9 @@ footer .copyright {
   flex-direction: column;
   align-items: center;
 }
-@media (min-width: 768px) and (max-width: 999px) {
+@media (min-width: 768px) and (max-width: 999px), (min-width: 1000px), (min-width: 1200px) {
   .home .content {
-    padding-top: 0;
+    padding-top: 2rem;
   }
 }
 .home .content button {
