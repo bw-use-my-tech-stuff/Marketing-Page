@@ -1,7 +1,7 @@
 // Home page style here
 .home {
   .top-content {
-    .flex-custom(column, @align-items:center);
+    .flex-custom(column; @align-items:center);
     padding: 2rem 1rem;
     margin-top: 2rem;
     margin: 0 auto;
@@ -24,7 +24,7 @@
     .images {
       visibility: hidden;
       width: 100%;
-      .flex-custom(@justify-content:space-evenly, @flex-wrap: wrap);
+      .flex-custom(@justify-content:space-evenly; @flex-wrap: wrap);
       height: 0;
 
       @media @tablet {
@@ -42,20 +42,20 @@
 
     .images-2 {
       width: 100%;
-      .flex-custom(@justify-content:space-evenly, @flex-wrap: wrap);
+      .flex-custom(@justify-content:space-evenly; @flex-wrap: wrap);
       visibility: hidden;
       height: 0;
-  
+
       @media @desktop, @full-screen {
         visibility: visible;
         margin-top: 2rem;
         height: auto;
       }
-  
+
       img {
         width: 150px;
         height: 100px;
-        
+
         @media @full-screen {
           width: 175px;
           height: 125px;
@@ -68,7 +68,7 @@
     padding: 2rem 1rem 2rem 1rem;
     border-bottom: 2px solid @nickel;
     margin-bottom: 2rem;
-    .flex-custom(column, @align-items:center);
+    .flex-custom(column; @align-items:center);
 
     @media @tablet, @desktop, @full-screen {
       padding-top: 2rem;
@@ -88,21 +88,21 @@
   }
 
   .testimonials {
-    .flex-custom(column, @align-items:center);
+    .flex-custom(column; @align-items:center);
 
     article {
-      .flex-custom(column, @align-items:center);
+      .flex-custom(column; @align-items:center);
       padding: 2rem 1rem;
 
       @media @tablet {
-        .flex-custom(row, @justify-content:space-around);
+        .flex-custom(row; @justify-content:space-around);
         p {
           width: 50%;
         }
       }
 
       @media @desktop {
-        .flex-custom(row, @justify-content:space-around);
+        .flex-custom(row; @justify-content:space-around);
         p {
           width: 50%;
         }
