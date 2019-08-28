@@ -1,24 +1,26 @@
 // Navigation styles here
 .top-nav {
   width: 100%;
-  .flex-custom(@align-items: center; @justify-content:space-around);
+  .flex-custom(
+    @align-items: center; @justify-content: space-around; @flex-wrap: wrap
+  );
   background: @background;
-  padding: 20px 0;
+  padding-top: 7px;
+  position: sticky;
+  top: 0;
+  z-index: 2;
 
   @media @desktop {
-    .flex-custom(row; @align-items: center; @justify-content: space-between);
-    position: sticky;
-    top: 0;
+    .flex-custom(@align-items: center; @justify-content: space-between);
   }
 
   @media @tablet {
     flex-direction: column;
-    position: sticky;
-    top: 0;
   }
 
   i {
     color: @white-smoke;
+    margin-bottom: 1.3rem;
 
     @media @desktop, @tablet {
       display: none;
@@ -40,9 +42,7 @@
   }
 
   nav {
-    display: none;
     width: 100%;
-    padding: 1%;
 
     @media @desktop {
       width: 50%;
@@ -56,12 +56,29 @@
 
     a {
       text-decoration: none;
-      font-size: 1.6rem;
+      text-align: center;
+      width: 100%;
+      padding: 2rem 0;
+      border-top: 1px solid @border;
+      border-bottom: 1px solid @border;
+      font-size: 2.8rem;
       color: @link;
     }
 
     a:hover {
       color: #4183c4;
     }
+  }
+
+  .hidden {
+    display: none;
+
+    @media @desktop, @tablet {
+      display: flex;
+    }
+  }
+
+  .visible {
+    .flex-custom(column);
   }
 }
