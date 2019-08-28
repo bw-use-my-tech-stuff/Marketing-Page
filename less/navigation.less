@@ -52,6 +52,7 @@
 
     @media @tablet {
       .flex-custom(@justify-content: space-evenly);
+      padding: 1%;
     }
 
     a {
@@ -63,6 +64,16 @@
       border-bottom: 1px solid @border;
       font-size: 2.8rem;
       color: @link;
+
+      @media @desktop, @tablet {
+        border: none;
+        font-size: 1.6rem;
+      }
+
+      @media @tablet {
+        width: auto;
+        padding: 0;
+      }
     }
 
     a:hover {
