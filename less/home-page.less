@@ -67,13 +67,14 @@
     border-bottom: 2px solid @nickel;
     margin-bottom: 2rem;
     .flex-custom(column, @align-items:center);
-    @media @tablet {
-      padding-top: 0;
+
+    @media @tablet, @desktop, @full-screen {
+      padding-top: 2rem;
     }
   }
 
   .content button {
-    border: 1px solid #727072;
+    border: 1px solid @nickel;
     padding: 5px;
     background: #2b4162;
     color: white;
