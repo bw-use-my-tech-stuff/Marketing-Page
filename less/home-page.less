@@ -2,9 +2,10 @@
 .home {
   .top-content {
     .flex-custom(column, @align-items:center);
-    padding: 2rem 1rem 1rem 1rem;
+    padding: 2rem 1rem 2rem 1rem;
     margin-top: 2rem;
     margin: 0 auto;
+    border-bottom: 2px solid @nickel;
   }
 
   .banner {
@@ -21,6 +22,7 @@
     margin: 0 auto;
 
     .images {
+      visibility: hidden;
       width: 100%;
       .flex-custom(@justify-content:space-evenly, @flex-wrap: wrap);
       height: 0;
