@@ -59,7 +59,7 @@ if(membersSection) {
                 <div class="member-info">
                     <h3>${member.firstName} ${member.lastName}</h3>
                     <p>${member.role}</p>
-                    <p>Github Handle: <a href="${member.githubLink}" target="_blank">${member.githubUsername}</a>
+                    <p>GitHub Handle: <a href="${member.githubLink}" target="_blank">${member.githubUsername}</a>
                     </p>
                 </div>
             </div>`;
@@ -73,22 +73,31 @@ if(membersSection) {
         //     <h3>${member.firstName} ${member.lastName}</h3>
         //     <p>${member.role}</p>
         //     <p>Github Handle: <a href="${member.githubLink}" target="_blank">${member.githubUsername}</a></p>`;
-    
+
         // membersSection.append(tempDiv);
     })
 }
 
 
 // // Grab the hamburger icon
-// let hamburger = document.querySelector('header i');
+let hamburger = document.querySelector('header i');
 
 // // Get header nav
-// let headerNav = document.querySelector('header nav');
+let headerNav = document.querySelector('header nav');
 
 
-// hamburger.addEventListener('click', function(e) {
-//     headerNav.classList.toggle('hidden');
-//     headerNav.classList.toggle('visible');
-// });
+hamburger.addEventListener('click', function(e) {
+    headerNav.classList.toggle('visible');
+});
 
+// Grab email submit button
+let emailButton = document.querySelector('.email-signup button');
 
+//Make sure emailButton exists
+if(emailButton) {
+    emailButton.addEventListener('mouseenter', function(e) {
+        e.target.style.opacity = 0.9;
+    });
+
+    emailButton.addEventListener('mouseleave', e => e.target.style.opacity = 1);
+}
