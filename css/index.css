@@ -175,6 +175,9 @@ footer .copyright {
   margin: 0 auto;
   border-bottom: 2px solid #727072;
 }
+.home .top-content p {
+  text-align: justify;
+}
 .home .banner {
   padding-top: 2rem;
   width: 100%;
@@ -249,6 +252,9 @@ footer .copyright {
     padding-top: 2rem;
   }
 }
+.home .content p {
+  text-align: justify;
+}
 .home .content button {
   border: 1px solid #727072;
   padding: 5px;
@@ -294,8 +300,8 @@ footer .copyright {
 .home .testimonials article p {
   text-align: justify;
 }
-.home .testimonials article p .company-name {
-  font-weight: bolder;
+.home .testimonials article p span {
+  font-weight: bold;
   color: #f5f0f6;
 }
 .home .testimonials article img {

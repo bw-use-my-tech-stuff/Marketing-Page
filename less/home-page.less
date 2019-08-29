@@ -6,6 +6,10 @@
     margin-top: 2rem;
     margin: 0 auto;
     border-bottom: 2px solid @nickel;
+
+    p {
+      text-align: justify;
+    }
   }
 
   .banner {
@@ -73,6 +77,10 @@
     @media @tablet, @desktop, @full-screen {
       padding-top: 2rem;
     }
+
+    p {
+      text-align: justify;
+    }
   }
 
   .content button {
@@ -103,6 +111,7 @@
 
       @media @desktop {
         .flex-custom(row; @justify-content:space-evenly);
+
         p {
           width: 50%;
         }
@@ -111,8 +120,8 @@
       p {
         text-align: justify;
 
-        .company-name {
-          font-weight: bolder;
+        span {
+          font-weight: bold;
           color: @logo;
         }
       }
