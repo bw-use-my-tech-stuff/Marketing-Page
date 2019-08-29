@@ -102,16 +102,8 @@
       .flex-custom(column; @align-items:center);
       margin: 2rem;
 
-      @media @tablet {
+      @media @tablet, @desktop {
         .flex-custom(row; @justify-content:space-evenly);
-        p {
-          width: 50%;
-        }
-      }
-
-      @media @desktop {
-        .flex-custom(row; @justify-content:space-evenly);
-
         p {
           width: 50%;
         }
