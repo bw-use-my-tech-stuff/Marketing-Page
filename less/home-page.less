@@ -122,6 +122,12 @@
   .testimonials {
     .flex-custom(column; @align-items:center);
 
+    h1 {
+      @media @tablet, @desktop {
+        font-size: 3rem;
+      }
+    }
+
     article {
       .flex-custom(column; @align-items:center);
       margin: 2rem;
@@ -130,6 +136,7 @@
         .flex-custom(row; @justify-content:space-evenly);
         p {
           width: 50%;
+          font-size: 2rem;
         }
       }
 
