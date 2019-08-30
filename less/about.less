@@ -1,110 +1,100 @@
 // About us page style here
 .about-page {
-    width: 100%;
-    .team {
-        padding: 30px 20px;
-        background-color: #B4B9BC;
+  width: 100%;
+  .team {
+    padding: 30px 20px;
+    background-color: #b4b9bc;
 
-        h2 {
-            font-size: 32px;
-            text-align: center;
-            margin-bottom: 30px;
-        }
-
-        border-bottom: 1px solid @deep-koamaru;
-
-        .members {
-            display: flex;
-            flex-direction: column;
-            flex-wrap: wrap;
-            justify-content: center;
-            align-items: center;
-
-            @media @tablet {
-                flex-direction: row;
-            }
-
-            @media @desktop {
-                flex-direction: row;
-            }
-
-            a {
-                display: contents;
-                color: black;
-            }
-
-            .card:hover {
-                background-color: lightseagreen;
-            }
-
-            .ui.link.cards:hover {
-                background-color: lightseagreen;
-            }
-
-            .team-member {
-                width: 80%;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                margin-bottom: 20px;
-                max-height: 500px;
-                border: 1px solid lightblue;
-                border-radius: 10px;
-                background-color: lightseagreen;
-                margin: 20px 20px;
-                padding-bottom: 30px;
-
-                @media @tablet {
-                    width: 40%;
-                }
-
-                @media @desktop {
-                    width: 28%;
-                }
-
-
-                h3 {
-                    font-size: 24px;
-                }
-                img {
-                    width: 80%;
-                    margin-bottom: 20px;
-                    padding-top: 15px;
-                }
-
-                .member-info {
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-                    align-items: center;
-                }
-            }
-        }
+    h2 {
+      font-size: 3.2rem;
+      text-align: center;
+      margin-bottom: 30px;
     }
 
-    .location {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin-bottom: 50px;
-        text-align: center;
+    border-bottom: 1px solid @deep-koamaru;
 
-        h2 {
-            font-size: 28px;
+    .members {
+      .flex-custom(
+        column; @flex-wrap: wrap; @justify-content: center; @align-items: center
+      );
+
+      @media @tablet {
+        flex-direction: row;
+      }
+
+      @media @desktop {
+        flex-direction: row;
+      }
+
+      a {
+        display: contents;
+        color: black;
+      }
+
+      .card:hover {
+        background-color: lightseagreen;
+      }
+
+      .ui.link.cards:hover {
+        background-color: lightseagreen;
+      }
+
+      .team-member {
+        width: 80%;
+        .flex-custom(column; @align-items: center);
+        margin-bottom: 20px;
+        max-height: 500px;
+        border: 1px solid lightblue;
+        border-radius: 10px;
+        background-color: lightseagreen;
+        margin: 20px 20px;
+        padding-bottom: 30px;
+
+        @media @tablet {
+          width: 40%;
         }
 
-        div.content {
-            margin: 40px 0px;
-            font-size: 28px;
+        @media @desktop {
+          width: 28%;
         }
-        
-        iframe {
-            width: 80%;
 
-            @media @desktop {
-                max-width: 870px;
-            }
+        h3 {
+          font-size: 2.4rem;
         }
+        img {
+          width: 80%;
+          height: 222px;
+          margin-bottom: 20px;
+          padding-top: 15px;
+        }
+
+        .member-info {
+          .flex-custom(column; @justify-content: center; @align-items: center);
+        }
+      }
     }
+  }
+
+  .location {
+    .flex-custom(column; @justify-content: center; @align-items: center);
+    margin-bottom: 50px;
+    text-align: center;
+
+    h2 {
+      font-size: 2.8rem;
+    }
+
+    div.content {
+      margin: 40px 0px;
+      font-size: 2.8rem;
+    }
+
+    iframe {
+      width: 80%;
+
+      @media @desktop {
+        max-width: 870px;
+      }
+    }
+  }
 }

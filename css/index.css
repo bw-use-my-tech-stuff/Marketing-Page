@@ -20,7 +20,6 @@ h5 {
 }
 img {
   max-width: 100%;
-  height: auto;
 }
 .top-nav {
   width: 100%;
@@ -175,8 +174,22 @@ footer .copyright {
   margin: 0 auto;
   border-bottom: 2px solid #727072;
 }
+@media (min-width: 768px) and (max-width: 999px), (min-width: 1000px), (min-width: 1200px) {
+  .home .top-content h1 {
+    font-size: 3rem;
+  }
+}
 .home .top-content p {
   text-align: justify;
+}
+.home .top-content p span {
+  font-weight: bold;
+  color: #f5f0f6;
+}
+@media (min-width: 768px) and (max-width: 999px), (min-width: 1000px), (min-width: 1200px) {
+  .home .top-content p {
+    font-size: 2rem;
+  }
 }
 .home .banner {
   padding-top: 2rem;
@@ -252,8 +265,18 @@ footer .copyright {
     padding-top: 2rem;
   }
 }
+@media (min-width: 768px) and (max-width: 999px), (min-width: 1000px), (min-width: 1200px) {
+  .home .content h2 {
+    font-size: 3rem;
+  }
+}
 .home .content p {
   text-align: justify;
+}
+@media (min-width: 768px) and (max-width: 999px), (min-width: 1000px), (min-width: 1200px) {
+  .home .content p {
+    font-size: 2rem;
+  }
 }
 .home .content button {
   border: 1px solid #727072;
@@ -271,6 +294,11 @@ footer .copyright {
   flex-direction: column;
   align-items: center;
 }
+@media (min-width: 768px) and (max-width: 999px), (min-width: 1000px) {
+  .home .testimonials h1 {
+    font-size: 3rem;
+  }
+}
 .home .testimonials article {
   display: flex;
   flex-direction: column;
@@ -281,10 +309,11 @@ footer .copyright {
   .home .testimonials article {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
   }
   .home .testimonials article p {
-    width: 50%;
+    width: 70%;
+    font-size: 2rem;
   }
 }
 .home .testimonials article p {
@@ -314,20 +343,20 @@ footer .copyright {
 }
 .about-page .team {
   padding: 30px 20px;
-  background-color: #B4B9BC;
+  background-color: #b4b9bc;
   border-bottom: 1px solid #2b4162;
 }
 .about-page .team h2 {
-  font-size: 32px;
+  font-size: 3.2rem;
   text-align: center;
   margin-bottom: 30px;
 }
 .about-page .team .members {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
 }
 @media (min-width: 768px) and (max-width: 999px) {
   .about-page .team .members {
@@ -373,10 +402,11 @@ footer .copyright {
   }
 }
 .about-page .team .members .team-member h3 {
-  font-size: 24px;
+  font-size: 2.4rem;
 }
 .about-page .team .members .team-member img {
   width: 80%;
+  height: 222px;
   margin-bottom: 20px;
   padding-top: 15px;
 }
@@ -395,11 +425,11 @@ footer .copyright {
   text-align: center;
 }
 .about-page .location h2 {
-  font-size: 28px;
+  font-size: 2.8rem;
 }
 .about-page .location div.content {
   margin: 40px 0px;
-  font-size: 28px;
+  font-size: 2.8rem;
 }
 .about-page .location iframe {
   width: 80%;

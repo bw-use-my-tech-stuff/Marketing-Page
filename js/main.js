@@ -26,12 +26,12 @@ function compare(a, b) {
 
 
 //Create team members
-let sean = new TeamMember('Sean', 'Hockin', 'UI Design', 'shockin779', 'https://github.com/shockin779', 'img/ps4.jpg');
-let chris = new TeamMember('Chris', 'Vasquez', 'UI Design', 'chrvasq', 'https://github.com/chrvasq', 'img/camera.jpg');
-let tony = new TeamMember('Tony', 'Walker', 'UI Design', 'TonyCWalker', 'https://github.com/TonyCWalker', 'img/computer.jpg');
-let seong = new TeamMember('Seong', 'Kim', 'Front-End Architect', 'seongck', 'https://github.com/seongck', 'img/tablet.jpg');
-let julian = new TeamMember('Julian', 'Yates', 'Front-End Architect', 'Julian2323', 'https://github.com/Julian2323', 'img/tv.jpg');
-let jonathan = new TeamMember('Jonathan', 'Picazo', 'Project Manager', 'macjabeth', 'https://github.com/macjabeth', 'img/music.jpg');
+let sean = new TeamMember('Sean', 'Hockin', 'UI Design', 'shockin779', 'https://github.com/shockin779', 'img/sean.jpeg');
+let chris = new TeamMember('Chris', 'Vasquez', 'UI Design', 'chrvasq', 'https://github.com/chrvasq', 'img/chris.jpg');
+let tony = new TeamMember('Tony', 'Walker', 'UI Design', 'TonyCWalker', 'https://github.com/TonyCWalker', 'img/tony.jpg');
+let seong = new TeamMember('Seong', 'Kim', 'Front-End Architect', 'seongck', 'https://github.com/seongck', 'img/seong.jpg');
+let julian = new TeamMember('Julian', 'Yates', 'Front-End Architect', 'Julian2323', 'https://github.com/Julian2323', 'img/julian.png');
+let jonathan = new TeamMember('Jonathan', 'Picazo', 'Project Manager', 'macjabeth', 'https://github.com/macjabeth', 'img/jonathan.png');
 
 let team = [sean, chris, tony, seong, julian, jonathan];
 
