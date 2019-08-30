@@ -6,6 +6,10 @@
     margin-top: 2rem;
     margin: 0 auto;
     border-bottom: 2px solid @nickel;
+
+    p {
+      text-align: justify;
+    }
   }
 
   .banner {
@@ -73,6 +77,10 @@
     @media @tablet, @desktop, @full-screen {
       padding-top: 2rem;
     }
+
+    p {
+      text-align: justify;
+    }
   }
 
   .content button {
@@ -92,19 +100,21 @@
 
     article {
       .flex-custom(column; @align-items:center);
-      padding: 2rem 1rem;
+      margin: 2rem;
 
-      @media @tablet {
-        .flex-custom(row; @justify-content:space-around);
+      @media @tablet, @desktop {
+        .flex-custom(row; @justify-content:space-evenly);
         p {
           width: 50%;
         }
       }
 
-      @media @desktop {
-        .flex-custom(row; @justify-content:space-around);
-        p {
-          width: 50%;
+      p {
+        text-align: justify;
+
+        span {
+          font-weight: bold;
+          color: @logo;
         }
       }
 
@@ -112,10 +122,6 @@
         width: 150px;
         height: 100px;
         margin-bottom: 1rem;
-      }
-
-      p {
-        padding: inherit;
       }
     }
   }
