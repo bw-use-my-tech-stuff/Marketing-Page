@@ -11,6 +11,8 @@
             margin-bottom: 30px;
         }
 
+        border-bottom: 1px solid @deep-koamaru;
+
         .members {
             display: flex;
             flex-direction: column;
@@ -77,6 +79,32 @@
                     justify-content: center;
                     align-items: center;
                 }
+            }
+        }
+    }
+
+    .location {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 50px;
+        text-align: center;
+
+        h2 {
+            font-size: 28px;
+        }
+
+        div.content {
+            margin: 40px 0px;
+            font-size: 28px;
+        }
+        
+        iframe {
+            width: 80%;
+
+            @media @desktop {
+                max-width: 870px;
             }
         }
     }

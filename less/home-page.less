@@ -7,8 +7,22 @@
     margin: 0 auto;
     border-bottom: 2px solid @nickel;
 
+    h1 {
+      @media @tablet, @desktop, @full-screen {
+        font-size: 3rem;
+      }
+    }
+
     p {
       text-align: justify;
+      span {
+        font-weight: bold;
+        color: @logo;
+      }
+
+      @media @tablet, @desktop, @full-screen {
+        font-size: 2rem;
+      }
     }
   }
 
@@ -78,8 +92,18 @@
       padding-top: 2rem;
     }
 
+    h2 {
+      @media @tablet, @desktop, @full-screen {
+        font-size: 3rem;
+      }
+    }
+
     p {
       text-align: justify;
+
+      @media @tablet, @desktop, @full-screen {
+        font-size: 2rem;
+      }
     }
   }
 
