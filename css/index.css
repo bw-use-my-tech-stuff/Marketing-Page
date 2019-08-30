@@ -315,6 +315,7 @@ footer .copyright {
 .about-page .team {
   padding: 30px 20px;
   background-color: #B4B9BC;
+  border-bottom: 1px solid #2b4162;
 }
 .about-page .team h2 {
   font-size: 32px;
@@ -384,4 +385,27 @@ footer .copyright {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+.about-page .location {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+  text-align: center;
+}
+.about-page .location h2 {
+  font-size: 28px;
+}
+.about-page .location div.content {
+  margin: 40px 0px;
+  font-size: 28px;
+}
+.about-page .location iframe {
+  width: 80%;
+}
+@media (min-width: 1000px) {
+  .about-page .location iframe {
+    max-width: 870px;
+  }
 }
